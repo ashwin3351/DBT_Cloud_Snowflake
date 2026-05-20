@@ -9,7 +9,6 @@
     )
 }}
 
-select *
-from {{ source('jaffle_shop', 'raw_orders') }}
+select * from {{ source('jaffle_shop', 'raw_orders') }}
 
 {% endsnapshot %}
