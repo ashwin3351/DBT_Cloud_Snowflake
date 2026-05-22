@@ -3,7 +3,7 @@ sources:
   - name: jaffle_shop
     loader: fivetran
     database: ANALYTICS
-    schema: dbt_Project2
+    schema: dbt_Project3
     
     tables:
       - name: raw_orders
@@ -12,7 +12,7 @@ sources:
             warn_after: {count: 6, period: hour}
             error_after: {count: 12, period: hour}
       
-      - name: raw_customers
+      - name: raw_customer
 
 
 # Old Code
