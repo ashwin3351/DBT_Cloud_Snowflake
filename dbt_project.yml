@@ -50,3 +50,12 @@ seeds:
       order_date: date
       status: varchar
       _etl_loaded_at: timestamp_ntz
+
+vars:
+   start_date: '2024-01-01'
+
+on-run-start:
+  - "create table if not exists audit_log (id int)"
+
+on-run-end:
+  - "insert into audit_log values (100)"
