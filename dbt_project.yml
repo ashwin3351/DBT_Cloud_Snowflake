@@ -60,5 +60,5 @@ seeds:
         user_id: integer
         order_date: date
         status: varchar
-      _etl_loaded_at: timestamp_ntz
+        _etl_loaded_at: timestamp_ntz
 
