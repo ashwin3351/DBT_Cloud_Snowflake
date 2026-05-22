@@ -3,7 +3,7 @@ sources:
   - name: jaffle_shop
     loader: fivetran
     database: ANALYTICS
-    schema: dbt_Project1
+    schema: dbt_Project2
     
     tables:
       - name: raw_orders

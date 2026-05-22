@@ -41,12 +41,24 @@ models:
     example:
       +materialized: table
 
+# seeds:
+#   my_new_project:
+#     +quote_columns: false
+#     +column_types:
+#       id: integer
+#       user_id: integer
+#       order_date: date
+#       status: varchar
+#       _etl_loaded_at: timestamp_ntz
+
 seeds:
   my_new_project:
-    +quote_columns: false
-    +column_types:
-      id: integer
-      user_id: integer
-      order_date: date
-      status: varchar
-      _etl_loaded_at: timestamp_ntz
+    raw_orders:
+      +quote_columns: false
+      +column_types:
+        id: integer
+        user_id: integer
+        order_date: date
+        status: varchar
+        _etl_loaded_at: timestamp_ntz
+
