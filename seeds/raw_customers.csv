@@ -1,4 +1,4 @@
-id,first_name,last_name,_etl_loaded_at
+id,first_name,last_name
 1,Michael,P.
 2,Shawn,M.
 3,Kathleen,P.
@@ -33,7 +33,7 @@ id,first_name,last_name,_etl_loaded_at
 32,Thomas,O.
 33,Katherine,M.
 34,Jennifer,S.
-35,Sarah,T.,2024-02-15 12:12:43.203904+05:30
+35,Sarah,T.
 36,Harold,O.
 37,Shirley,J.
 38,Dennis,J.
