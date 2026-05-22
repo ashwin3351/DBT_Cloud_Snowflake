@@ -12,7 +12,7 @@ sources:
             warn_after: {count: 6, period: hour}
             error_after: {count: 12, period: hour}
       
-      - name: raw_customers
+      - name: raw_customer
 
 
 # Old Code
