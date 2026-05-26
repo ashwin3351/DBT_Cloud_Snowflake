@@ -7,7 +7,15 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+-- {{ config(materialized='table') }}
+
+{{
+    config(
+        materialized='table',
+        pre_hook="create table if not exists check_log (id int)",
+        post_hook="insert into check_log values (1)"
+    )
+}}
 
 with source_data as (
 
@@ -25,3 +33,5 @@ from source_data
 */
 
 -- where id is not null
+
+

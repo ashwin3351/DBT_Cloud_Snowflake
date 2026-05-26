@@ -62,3 +62,8 @@ seeds:
         status: varchar
         _etl_loaded_at: timestamp_ntz
 
+on-run-start:
+  - "create table if not exists audit_log (id int)"
+
+on-run-end:
+  - "insert into audit_log values (100)"
