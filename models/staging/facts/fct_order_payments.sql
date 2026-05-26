@@ -6,7 +6,7 @@ select
 
     p.payment_id,
     p.payment_method,
-    p.amount
+    p.amount_usd
 
 from {{ ref('stg_orders') }} o
 left join {{ ref('stg_payments') }} p
