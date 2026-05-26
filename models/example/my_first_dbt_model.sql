@@ -12,8 +12,8 @@
 {{
     config(
         materialized='table',
-        pre_hook="create table if not exists check_log (id int)",
-        post_hook="insert into check_log values (1)"
+        pre_hook="create table if not exists check_logs (id int)",
+        post_hook="insert into check_logs values (1)"
     )
 }}
 
